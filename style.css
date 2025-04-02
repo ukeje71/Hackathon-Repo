@@ -1,0 +1,15 @@
+/* Errm This Is MrDee I Actuall Started Without You Guys */
+/* Changing The Body Background Color */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(223, 223, 223);
+}
+
+body {
+  background-color: var(--bg-color);
+}
