@@ -1,22 +1,48 @@
 /* default styles */
 body{
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ place-content: center;
+ align-items: center;
+ min-height: 100vh;
+ color: #fff;
 }
-
+.contact-segement{
+    width: fit-content;
+     margin: 0 auto;
+    align-items: center;
+    box-shadow: 0px 2px 7px 5px #fff;
+    padding: 10px;
+}
 /* Mobile Responsibveness */
 @media screen  and (min-width:120px) and (max-width:549px){
-
+    body{
+    background-image:url(Professional\ High\ Five.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-size: cover;
+}
+.contact-segement{
+background-color: #80808027;
+}
 .contact-segement span:nth-child(1){
 display: flex;
-margin-left: 20px;
 gap:5px ; 
-justify-content: center;}
+justify-content: center;
+padding: 10px;
+font-size: 1.5em;
+}
 .contact-segement span:nth-child(2){
     text-align: center;
 }
 .contact-segement span .grey{
-    color: grey;
+    color: #fff;
     font-weight: 600;
+    backdrop-filter: blur(10px);
 }
 
 form , form span{
@@ -40,15 +66,25 @@ form button{
     color: #fff;
     border-radius: 4px;
     margin: 0 auto;
+    border: none;
+}
+form button:hover{
+    background-color: #25a73f;
+}
+.feedback-img{
+    display: none;
 }
 }
-
 /* TABLET RESPONSIVENESS */
 @media screen and (min-width: 550px) {
+.contact-segement{
+    padding: 20px 20px;
 
+}
     .contact-segement span:nth-child(1){
         display: flex;
-        gap: 5px;font-size: large;
+        gap: 5px;
+        font-size: large;
         margin-left: 40px;
     }
     .contact-segement span:nth-child(2){
