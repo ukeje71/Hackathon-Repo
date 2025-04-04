@@ -9,6 +9,12 @@ body {
   min-height: 100vh;
 }
 
+input:user-valid{
+    border: 2px solid #25a73f;
+}
+input:user-invalid{
+    border: 2px solid red;
+}
 /* Mobile Responsibveness */
 @media screen and (min-width: 120px) and (max-width: 549px) {
   body {
@@ -33,7 +39,8 @@ body {
     gap: 5px;
     justify-content: center;
     padding: 10px;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
   }
   .contact-segement span:nth-child(2) {
     text-align: center;
